@@ -1,5 +1,5 @@
 # nopi-qs
-Nonstandard Programing Implementation of Quicksort
+Nonstandard Programming Implementation of Quicksort
 
 ## Quicksort: From Classical to Modern Implementations
 Examination of quicksort, starting from a standard recursive and in-place implementation, followed by a better pivot selection and modern optimizations such as SIMD operations, multi-threading an dynamic resource management.
@@ -28,7 +28,7 @@ CPU OPTIMIZATIONS
 - [ ] Reduce swaps
 - [ ] Branch prediction
 - [ ] Block partitioning
-- [ ] SIMD compariosn
+- [ ] Comparisons with SIMD
 
 MULTI-THREADING
 - [ ] PThreads implementation
@@ -49,10 +49,15 @@ BENCHMARKING
 - [ ] Measure cache misses
 - [ ] Measure branch predictions
 
+RESULTS
+- [x] Creating a CSV for each testcase
+- [ ] Writing a program to create diagrams
+- [ ] Making the testcases be dynamically selectable in the terminal
+
 ## Results of benchmarking
 
 I will use `qsort()` from `<stdlib.h>` as the baseline for all implementations.
-For each benchmark critira, I will provide a graph comparing the different implementatios across varying input size. This will show the impact of each optimization and overall performance. 
+For each benchmark criteria, I will provide a graph comparing the different implementations across varying input size. This will show the impact of each optimization and overall performance. 
 
 
 

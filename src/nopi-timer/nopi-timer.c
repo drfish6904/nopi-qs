@@ -5,6 +5,7 @@
 
 #define _POSIX_C_SOURCE 200809L
 #define NSEC_PER_SEC NOPI_NSEC_PER_SEC
+#define NSEC_PER_MSEC NOPI_NSEC_PER_MSEC
 
 double
 nopi_timer_qs (
@@ -28,5 +29,5 @@ nopi_timer_qs (
     );
 
     return (end.tv_sec - start.tv_sec) + 
-        ((end.tv_nsec - start.tv_nsec) / NSEC_PER_SEC);
+        ((end.tv_nsec - start.tv_nsec) / NSEC_PER_MSEC);
 }
